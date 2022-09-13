@@ -59,8 +59,10 @@ let menu = {
     // On change le texte du bouton selon l'état du menu
     if (this.refNav.classList.contains('nav--closed')) {
       this.refSpan.innerHTML = this.strNavClosed;
+      this.refButton.setAttribute("aria-expanded", "false");
     } else {
       this.refSpan.innerHTML = this.strNavOpen;
+      this.refButton.setAttribute("aria-expanded", "true");
     }
   }
 };

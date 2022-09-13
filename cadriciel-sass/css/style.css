@@ -357,7 +357,7 @@ abbr[title] {
 }
 
 abbr[title]:hover {
-  background-color: rgba(71, 244, 74, 0.25);
+  background-color: rgba(244, 161, 71, 0.25);
 }
 
 /** Accessibilité
@@ -648,6 +648,22 @@ h4,
     transition: max-height 0.5s;
   }
 }
+/*Afficher l'icône hamburger et X */
+.nav__control:before {
+  display: inline-block;
+  content: "";
+  width: 1em;
+  height: 1em;
+  background-image: url("../images/ico-fermer.svg");
+  vertical-align: top;
+  margin-right: 0.25em;
+}
+
+.nav--closed .nav__control:before {
+  /* compléter pour afficher l’icône Hamburger */
+  background-image: url("../images/ico-menu.svg");
+}
+
 /* Grille
    ========================================================================== */
 /*** Classe conteneur pour le centrage et l'affichage de la grille en arrière-plan ***/
@@ -744,12 +760,12 @@ header p {
 
 header,
 footer {
-  background-color: #daeeff;
+  background-color: #c2e2fc;
 }
 
 header {
   padding: 1rem;
-  border-bottom: 0.5rem solid #daeeff;
+  border-bottom: 0.5rem solid #c2e2fc;
   border-image: linear-gradient(#f19393, #f60173) 27;
 }
 
@@ -759,13 +775,13 @@ aside {
 }
 @media (min-width: 601px) {
   aside {
-    background-color: #daeeff;
+    background-color: #c2e2fc;
   }
 }
 
 .description {
   padding: 0 2rem 0;
-  border-left: 5rem solid #daeeff;
+  border-left: 5rem solid #c2e2fc;
   border-image: linear-gradient(#f60173, #f19393) 27;
 }
 

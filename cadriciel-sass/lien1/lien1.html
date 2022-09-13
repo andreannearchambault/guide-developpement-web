@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadriciel TIMCSF - 2022 - v.0.3</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<!-- lien rapide pour aller au contenu -->
+<a href="#main" class="screen-reader-only focusable">Allez au contenu</a>
+
+<!-- le header étant un élément block, il prend la largeur de la fenêtre, il est "bleed" -->
+<header role="banner">
+    <!-- la classe conteneur fait le centrage grâce à un max-width et des marges latérales automatiques -->
+    <div class="conteneur">
+        <p class="h1">Lien 1</p>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__list-item">
+                    <a href="lien1.html" class="nav__link nav__link--active" aria-current="page">Lien 1</a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="/lien2/lien2.html" class="nav__link">Lien 2</a>
+                </li>
+                <li class="nav__list-item">
+                    <!-- remarquer que .nav__link--active est le modificateur de .nav__link
+                pour mettre en valeur l'item de menu courant -->
+                    <a href="/index.html" class="nav__link">Page courante</a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="#" class="nav__link">Lien 4</a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="#" class="nav__link">Lien 5</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<script src="/js/menu.js"></script>
+</body>
+</html>
